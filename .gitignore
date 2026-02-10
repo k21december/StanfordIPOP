@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Data (DON'T upload)
+data/raw/
+data/clean/
+
+# OS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
