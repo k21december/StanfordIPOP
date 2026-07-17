@@ -21,8 +21,9 @@ results/immune_slope_test/
 *_coefficients.csv
 model_outputs.csv
 
-# Individual-level (single named subject) trajectory plots
+# Individual-level (single subject) trajectory plots
 reports/figures/trajectory_*.png
+example_trajectory.png
 
 # Stray backups
 .gitignore.save
