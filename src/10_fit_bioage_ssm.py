@@ -6,7 +6,7 @@ CLEAN = Path("data/clean")
 OUT = CLEAN / "bioage_estimates.parquet"
 
 def main():
-    obs = pd.read_parquet(CLEAN / "observations.parquet")
+    obs = pd.read_parquet(CLEAN / "observations_plus_cytokines.parquet")
 
     z_cols = [c for c in obs.columns if c.startswith("z_")]
     if not z_cols:

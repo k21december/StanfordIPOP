@@ -7,6 +7,26 @@ __pycache__/
 data/raw/
 data/clean/
 
+# Raw data file types (defense in depth — data/ already ignored)
+*.parquet
+*.dta
+
+# DUA-protected derived-result tables — never publish (data/ already ignored above).
+# All result/summary CSVs, per-subject rows, and files embedding subject HashedIDs.
+results/**/*.csv
+results/immune_slope_test/
+*_summary.csv
+*_rows.csv
+*_predictions.csv
+*_coefficients.csv
+model_outputs.csv
+
+# Individual-level (single named subject) trajectory plots
+reports/figures/trajectory_*.png
+
+# Stray backups
+.gitignore.save
+
 # OS
 .DS_Store
 
